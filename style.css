@@ -63,12 +63,7 @@ a {
 
 #header {
   position: fixed;
-  z-index: 10px;
-  left: 0px;
-  top: 0px;
   width: 100vw;
-  height: auto;
-  background-color: rgb(1, 1, 43);
 }
 
 nav {
@@ -95,8 +90,8 @@ nav .mainMenu li a:hover {
   background: rgb(11, 0, 97);
 }
 nav .openMenu {
-  font-size: 2rem;
-  padding: 20px;
+  font-size: 1.5rem;
+  padding: 15px;
   display: none;
   cursor: pointer;
 }
@@ -123,6 +118,11 @@ nav .logo {
   padding: 25px;
   font-size: 25px;
   cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
 }
 
 img {
@@ -363,10 +363,10 @@ body {
     margin-top: 10px;
   }
   nav .logo{
-    font-size: 20px;
+    font-size: 15px;
   }
   nav .openMenu {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
