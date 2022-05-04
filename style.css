@@ -61,6 +61,16 @@ a {
   color: white;
 } */
 
+#header {
+  position: fixed;
+  z-index: 10px;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(1, 1, 43);
+}
+
 nav {
   font-family: "Montserrat", sans-serif;
   background: rgb(1, 1, 43);
