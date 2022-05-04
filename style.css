@@ -84,7 +84,7 @@ nav .mainMenu li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 18px;
-  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 nav .mainMenu li a:hover {
   background: rgb(11, 0, 97);
