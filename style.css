@@ -10,7 +10,7 @@ html{
   scroll-behavior : smooth;
 }
 
-.container {
+/* .container {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -59,6 +59,60 @@ ul {
 a {
   text-decoration: none;
   color: white;
+} */
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(1, 1, 43);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+nav .mainMenu li a:hover {
+  background: rgb(11, 0, 97);
+}
+nav .openMenu {
+  font-size: 2rem;
+  padding: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+nav .logo {
+  padding: 25px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 img {
@@ -117,6 +171,13 @@ img {
   justify-content: center;
   flex-direction: row;
 }
+
+.dnone{
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
 body {
   background-color: rgb(1, 1, 43);
 }
@@ -203,6 +264,55 @@ body {
   }
 }
 
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:  rgb(1, 1, 43);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .about{
+    font-size: 40px;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 470px;
+    }
+  }
+}
+
+
 @media only screen and (max-width: 734px) {
   .card-1 {
     width: 350px;
@@ -214,51 +324,6 @@ body {
 
 }
 
-@media only screen and (max-width: 799px) {
-    .about{
-      font-size: 40px;
-    }
-    @keyframes typewriter {
-      from {
-        width: 0;
-      }
-      to {
-        width: 470px;
-      }
-    }
-    .burger {
-      width: 25px;
-      display: flex;
-      flex-direction: column;
-      border-radius: 3px;
-      margin-right: 20px;
-    }
-    .line {
-      width: 25px;
-      background-color: #ffffff;
-      height: 4px;
-      margin: 3px;
-    }
-    .v-nav {
-      height: 0px;
-      visibility: hidden;
-    }
-    .nav-list li {
-      display: none;
-      margin: 0;
-      padding: 0;
-      width: 0;
-      height: 0;
-    }
-    ul{
-      margin: 0;
-      padding: 0;
-      display: none;
-    }
-    .hamburger{
-      background-color: black;
-    }
-}
 
 @media only screen and (max-width: 503px) {
   .about{
@@ -275,6 +340,9 @@ body {
   .secondSection {
     margin-top: 400px;
   }
+  img{
+    width: 80px;
+  }
 }
 
 @media only screen and (max-width: 422px) {
@@ -284,12 +352,17 @@ body {
   .intro{
     margin-top: 10px;
   }
+  nav .logo{
+    font-size: 20px;
+  }
+  nav .openMenu {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
     .card-1{
       width: 300px;
     }
-}
-
-
+  }
+  
