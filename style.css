@@ -286,6 +286,7 @@ body {
     justify-content: center;
     align-items: center;
     background:  rgb(1, 1, 43);
+    -webkit-transition : top 1s ease 0s;
     transition: top 1s ease 0s;
     display: none;
   }
