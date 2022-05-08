@@ -209,8 +209,6 @@ u{
   display: none;
 }
 
-#more {display: none;}
-
 #particles-js canvas {
   display: block;
   -webkit-transform: scale(1);
@@ -352,6 +350,9 @@ u{
   }
   u{
   display: inline;
+  }
+  #more {
+    display: none;
   }
 }
 
