@@ -78,6 +78,7 @@ nav .mainMenu {
   display: flex;
   list-style: none;
 }
+
 nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
@@ -175,11 +176,22 @@ img {
   width: 1200px;
   height: 100%;
   margin: 20px;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content{
+  text-align: center;
+  margin-top: 20px;
+  word-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .dnone{
@@ -191,6 +203,13 @@ img {
 body {
   background-color: rgb(1, 1, 43);
 }
+
+u{
+  color: rgb(177, 177, 177);
+  display: none;
+}
+
+#more {display: none;}
 
 #particles-js canvas {
   display: block;
@@ -331,7 +350,9 @@ body {
   .name{
     font-size: 20px;
   }
-
+  u{
+  display: inline;
+  }
 }
 
 
