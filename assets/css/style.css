@@ -132,6 +132,22 @@ img {
   font-weight: bold;
 }
 
+.thirwrapper {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.thirdabout{
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px;
+}
+
 .card-1 {
   background-color: #232d48;
   width: 1200px;
