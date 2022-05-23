@@ -99,7 +99,7 @@ nav .logo {
   }
 
   img{
-    width: 300px;
+    width: 250px;
     border-radius: 1000px;
   }
 
@@ -140,5 +140,34 @@ nav .logo {
 
   .container {
     position: relative;
-    width: 300px;
+    width: 250px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    img{
+      width: 200px;
+    }
+    .overlay{
+      width: 200px;
+    }
+    .text{
+      font-size: 10px;
+    }
+    .container{
+      width: 200px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px){
+  .teams{
+    flex-direction: column;
+  }
+  img{
+    padding: 10px;
+  }
+  nav .logo {
+    padding: 25px;
+    font-size: 12px;
+    cursor: pointer;
+  }
   }
