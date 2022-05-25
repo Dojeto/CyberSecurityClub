@@ -3,6 +3,9 @@ const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 const menu_items = document.querySelectorAll('nav .mainMenu li a');
 
+const newitem = document.querySelector('.next');
+const previtem = document.querySelector('.prev');
+
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
@@ -24,6 +27,9 @@ function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
+
+    newitem.classList.toggle("newnext");
+    previtem.classList.toggle("newprev");
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
@@ -37,7 +43,7 @@ function myFunction() {
   }
 
 
-let slideIndex = 1;
+  let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {

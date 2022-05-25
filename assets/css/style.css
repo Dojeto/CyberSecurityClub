@@ -383,11 +383,10 @@ u {
 
 
 
-
-/* Slideshow container */
+/* 
+Slideshow container */
 .slideshow-container {
   max-width: 400px;
-  position: relative;
   margin: auto;
 }
 
@@ -396,7 +395,7 @@ u {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 100px;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -410,14 +409,23 @@ u {
 
 /* Position the "next button" to the right */
 .next {
-  right: -20px;
+  right: 0px;
+  top: 1350px;
   border-radius: 3px 0 0 3px;
 }
 .prev{
-  left: -20px;
+  left: 0px;
+  top: 1350px;
   border-radius: 3px 0 0 3px;
 }
 
+.newnext{
+  top: 2050px;
+}
+
+.newprev{
+  top: 2050px;
+}
 /* Fading animation */
 .fade {
   animation-name: fade;
