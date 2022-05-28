@@ -65,6 +65,8 @@ nav .mainMenu .closeMenu,
   color: rgb(255, 123, 0);
 }
 nav .logo {
+  position: relative;
+  right: 265px;
   padding: 25px;
   font-size: 20px;
   cursor: pointer;
@@ -316,6 +318,12 @@ u {
       width: 470px;
     }
   }
+  nav .logo {
+    padding: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    left: 0px;
+  }
 }
 
 @media only screen and (max-width: 734px) {
@@ -356,6 +364,7 @@ u {
     padding: 25px;
     font-size: 15px;
     cursor: pointer;
+    right: 20px;
   }
 
 }
@@ -410,21 +419,21 @@ Slideshow container */
 /* Position the "next button" to the right */
 .next {
   right: 0px;
-  top: 1350px;
+  top: 1400px;
   border-radius: 3px 0 0 3px;
 }
 .prev{
   left: 0px;
-  top: 1350px;
+  top: 1400px;
   border-radius: 3px 0 0 3px;
 }
 
 .newnext{
-  top: 2050px;
+  top: 2000px;
 }
 
 .newprev{
-  top: 2050px;
+  top: 2000px;
 }
 /* Fading animation */
 .fade {
@@ -442,4 +451,11 @@ img{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+nav img{
+  width: 80px;
+  margin: 0;
+  padding: 0;
 }
