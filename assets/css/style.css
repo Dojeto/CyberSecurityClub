@@ -263,12 +263,26 @@ u {
     width: 1000px;
     height: 100%;
   }
+  nav .logo {
+    padding: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+  }
 }
 
 @media only screen and (max-width: 999px) {
   .card-1 {
     width: 700px;
     height: 100%;
+  }
+  nav .logo {
+    padding: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 0px;
   }
 }
 
@@ -429,11 +443,11 @@ Slideshow container */
 }
 
 .newnext{
-  top: 2000px;
+  top: 2050px;
 }
 
 .newprev{
-  top: 2000px;
+  top: 2050px;
 }
 /* Fading animation */
 .fade {
