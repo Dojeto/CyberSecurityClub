@@ -155,7 +155,7 @@ img {
   background-color: #232d48;
   width: 1200px;
   height: 100%;
-  margin: 20px;
+  margin: 140px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -377,7 +377,7 @@ u {
   }
   nav .logo {
     padding: 25px;
-    font-size: 13px;
+    font-size: 15px;
     cursor: pointer;
     right: 20px;
   }
@@ -392,7 +392,7 @@ u {
     margin-top: 10px;
   }
   nav .logo {
-    font-size: 10px;
+    font-size: 15px;
   }
   nav .openMenu {
     font-size: 1.2rem;
@@ -456,7 +456,7 @@ Slideshow container */
   animation-duration: 1.5s;
 }
 img{
-  border-radius: 30px;
+  border-radius: 65px;
 }
 @keyframes fade {
   from {opacity: .4} 
@@ -470,7 +470,7 @@ img{
 
 
 nav img{
-  width: 80px;
-  margin: 0;
+  width: 60px;
+  margin: 0 15px;
   padding: 0;
 }
